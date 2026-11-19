@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Recall — a small, local-first flashcard app for revision practice." />
+    <meta name="theme-color" content="#0d1117" />
+    <script>
+      // Set the saved theme before CSS paints, so there is no flash of the wrong theme.
+      try {
+        var saved = JSON.parse(localStorage.getItem("recall.theme.v1") || '"dark"');
+        document.documentElement.dataset.theme = saved === "light" ? "light" : "dark";
+      } catch (error) {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Recall — Flashcard revision</title>
+    <script type="module" crossorigin src="./assets/index-j5JQVT2-.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DUK7w5Kq.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
